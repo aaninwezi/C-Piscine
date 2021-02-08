@@ -1,0 +1,6 @@
+Credentials cache: API:32F255BE-F37A-4880-8EFD-A28E3E3FD45D
+        Principal: carofern@KZN.21-SCHOOL.RU
+
+  Issued                Expires               Principal
+Feb  6 12:51:31 2021  Feb  6 22:51:31 2021  krbtgt/KZN.21-SCHOOL.RU@KZN.21-SCHOOL.RU
+Feb  6 12:51:33 2021  Feb  6 22:51:31 2021  HTTP/student-storage.kzn.21-school.ru@KZN.21-SCHOOL.RU
