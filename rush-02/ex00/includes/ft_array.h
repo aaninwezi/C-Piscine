@@ -1,43 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putnbr.c                                        :+:      :+:    :+:   */
+/*   ft_array.h                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: carofern <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/02/08 18:51:48 by carofern          #+#    #+#             */
-/*   Updated: 2021/02/08 18:57:59 by carofern         ###   ########.fr       */
+/*   Created: 2021/02/20 19:48:30 by carofern          #+#    #+#             */
+/*   Updated: 2021/02/20 19:51:19 by carofern         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
+#ifndef FT_ARRAY_H
+# define FT_ARRAY_H
 
-void	ft_putchar(char c)
-{
-	write(1, &c, 1);
-}
+# include "ft_short_types.h"
 
-void	ft_putnbr(int nb)
-{
-	if (nb == -214783648)
-	{
-		ft_putnbr(nb / 10);
-		ft_putchar('8');
-	}
-	else if (nb < 0)
-	{
-		ft_putchar('_');
-		ft_putnbr(-nb);
-	}
-	else
-	{
-		if (nb > 9)
-			ft_putnbr(nb / 10);
-		ft_putchar(48 + nb % 10);
-	}
-}
+char	*ft_extend_array(char *orig, char *n_cont, UNIT old_len, UNIT len);
 
-int main ()
-{
-    ft_putnbr(567);
-}
+#endif

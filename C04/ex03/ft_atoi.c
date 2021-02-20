@@ -10,6 +10,9 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+#include <stdio.h>
+#include <string.h>
+
 int		ft_atoi(char *str)
 {
 	int		i;
@@ -37,4 +40,11 @@ int		ft_atoi(char *str)
 		return (-nbr);
 	else
 		return (nbr);
+}
+
+int main(void)
+{
+    char    *str = "++++473473";
+    
+    printf("ans: %i\n", ft_atoi(str));
 }
